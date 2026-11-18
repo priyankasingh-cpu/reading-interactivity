@@ -1,0 +1,39 @@
+{
+  "name": "SC6-M1: Helm Chart & Inference Health Probes Interactive Lab",
+  "short_name": "Helm & Probes Lab",
+  "version": "1.0.0",
+  "description": "Interactive lab for configuring Kubernetes health probes for slow-loading AI inference models and sequencing Helm chart deployment steps on AKS.",
+  "course_metadata": {
+    "short_course": "SC 6: Deploy & Trace Services",
+    "module": "Module 1: Package and Deploy with Helm",
+    "learning_objective": "LO1: Apply Helm charts to deploy containerized inference services to Azure Kubernetes Service (AKS) and validate roll-outs with health probes.",
+    "bloom_level": "Apply",
+    "estimated_duration_minutes": 8
+  },
+  "entry_point": "index.html",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230284c7'/%3E%3Cpath d='M32 14L48 23v18L32 50 16 41V23l16-9z' fill='none' stroke='%23ffffff' stroke-width='3.5'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%2338bdf8'/%3E%3C/svg%3E",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1-probe-simulator",
+      "title": "Health Probe Architecture & Cold-Start Simulator",
+      "type": "interactive-simulation-and-hotspot",
+      "competency": "Configure startupProbe, readinessProbe, and livenessProbe budgets to prevent CrashLoopBackOff during GPU model loading."
+    },
+    {
+      "id": "act-2-helm-sequencer",
+      "title": "Helm Chart Build & AKS Rollout Sequencer",
+      "type": "drag-and-drop-ordering",
+      "competency": "Execute the 6-step Helm scaffolding, configuration, linting, namespace deployment, and rollout validation workflow."
+    }
+  ]
+}
